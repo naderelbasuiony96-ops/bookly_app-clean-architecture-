@@ -1,5 +1,4 @@
 import 'package:bookly_clean_architecture_app/feature/home/presentation/view/widget/home_view_body.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {

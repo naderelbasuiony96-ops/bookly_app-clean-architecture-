@@ -24,8 +24,8 @@ class _MyWidgetState extends State<SplashViewBody>
 
   @override
   void dispose() {
-    super.dispose();
     animationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -55,7 +55,9 @@ class _MyWidgetState extends State<SplashViewBody>
 
   void navigateHomeView() {
     Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push(AppRouter.kHomeView);
+      if (context.mounted) {
+        GoRouter.of(context).push(AppRouter.kHomeView);
+      }
     });
   }
 }

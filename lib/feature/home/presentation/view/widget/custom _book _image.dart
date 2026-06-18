@@ -1,5 +1,5 @@
+import 'package:flutter/material.dart';
 import 'package:bookly_clean_architecture_app/core/Utils/assets.dart';
-import 'package:flutter/cupertino.dart';
 
 class CustomBookImage extends StatelessWidget {
   const CustomBookImage({super.key});

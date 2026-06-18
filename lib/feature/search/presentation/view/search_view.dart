@@ -1,5 +1,4 @@
 import 'package:bookly_clean_architecture_app/feature/search/presentation/view/widget/search_view_body.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchView extends StatelessWidget {
@@ -7,6 +6,6 @@ class SearchView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SearchViewBody());
+    return Scaffold(body: SafeArea(child: SearchViewBody()));
   }
 }

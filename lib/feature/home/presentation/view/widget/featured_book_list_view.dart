@@ -1,5 +1,7 @@
+import 'package:bookly_clean_architecture_app/core/Utils/app_router.dart';
 import 'package:bookly_clean_architecture_app/feature/home/presentation/view/widget/featured_list_view_item.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:go_router/go_router.dart';
 
 class FeaturedBookListView extends StatelessWidget {
   const FeaturedBookListView({super.key});
@@ -12,9 +14,14 @@ class FeaturedBookListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
 
         itemBuilder: (context, index) {
-          return const Padding(
+          return Padding(
             padding: EdgeInsets.symmetric(horizontal: 8),
-            child: FeaturedListViewItem(),
+            child: GestureDetector(
+              onTap: () {
+                GoRouter.of(context).push(AppRouter.kBookDetailsView);
+              },
+              child: FeaturedListViewItem(),
+            ),
           );
         },
       ),

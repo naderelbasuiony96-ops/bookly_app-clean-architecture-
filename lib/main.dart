@@ -1,6 +1,5 @@
 import 'package:bookly_clean_architecture_app/constansts.dart';
 import 'package:bookly_clean_architecture_app/core/Utils/app_router.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
