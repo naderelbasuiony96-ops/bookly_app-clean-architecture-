@@ -1,4 +1,3 @@
-import 'package:bookly_clean_architecture_app/constansts.dart';
 import 'package:bookly_clean_architecture_app/core/Utils/app_router.dart';
 import 'package:bookly_clean_architecture_app/core/Utils/assets.dart';
 import 'package:bookly_clean_architecture_app/core/Utils/styles.dart';
@@ -6,8 +5,8 @@ import 'package:bookly_clean_architecture_app/feature/home/presentation/view/wid
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class NewsetBooksListViewItem extends StatelessWidget {
+  const NewsetBooksListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
