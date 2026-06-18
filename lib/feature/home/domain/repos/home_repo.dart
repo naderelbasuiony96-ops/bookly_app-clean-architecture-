@@ -2,5 +2,5 @@ import 'package:bookly_clean_architecture_app/feature/home/domain/entities/book_
 
 abstract class HomeRepo {
   Future<List<BookEntity>> fetchFeaturedBooks();
-  Future<List<BookEntity>> fetchBestSellerBooks();
+  Future<List<BookEntity>> fetchNewsetBooks();
 }
